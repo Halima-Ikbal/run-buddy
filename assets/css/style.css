@@ -31,8 +31,7 @@ header a {
   text-decoration: none;
   color: #fce138;
 }
-header nav {
-  
+header nav {  
   margin: 7px 0;
 }
 
@@ -139,16 +138,6 @@ footer a {
 
 /* what we do styles */
 
-.intro h2{
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid;
-  border-color: #fce138;
-  display: inline-block;
-
-}
 
 .intro p{
   line-height : 1.7;
@@ -180,9 +169,7 @@ footer a {
   border-color: #39a6b2;
 }
 
-section {
-  padding: 60px;
-}
+
 /* section title style end */
 
 /* what you do styles start */
@@ -346,20 +333,103 @@ section {
   display: flex
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media scree and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-cta, .hero-form{
+    width: 100%;
+  }
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title{
+    width: 80%;
+  }
+  .trainer{
+    flex: 0 70%;
+  }
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+
   
   
   
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */ 
 @media screen and (max-width:768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3{
+    flex: 1 100%;
+    text-align: center;
+  }
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .step-text {
+    flex: 100%;
+  }
+
   
   
 
 }
 /* MEDIA QUERY FOR MOBILE PHONE AND SMALLER */
 @media screen and (max-width: 575px) {
+  .hero-form button {
+    width : 100%;
+  
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info >* {
+    flex: 0 100%;
+  }
+  .contact-form{
+    order: 3;
+  }
+    
+  }
   
   
   
-}
+
